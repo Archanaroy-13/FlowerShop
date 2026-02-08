@@ -96,7 +96,7 @@
     width: full;
     height:510px;
     /* margin-top:2px; */
-    background: url("/images/heroimage.png") ;
+    background: url("images/heroimage.png") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
