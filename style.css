@@ -1,0 +1,199 @@
+.my-navbar {
+    height: 80px;
+    box-shadow: 0 6px 10px -2px rgba(0,0,0,0.25);
+    position: relative;
+    z-index: 10;
+}
+
+.custom-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+#heading {
+    font-family: 'Cormorant Garamond', serif;
+    color: #d87093;
+    font-size: 50px;
+    margin-right:200px;
+    margin-left:70px;
+}
+
+#searchInput {
+    height: 30px;
+    border-radius: 10px;
+    margin-left:90px;
+    margin-right:10px;
+}
+
+.cart-profile {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+    margin-right:20px;
+
+}
+.outer-hero {
+    width: full;
+    height:510px;
+    /* margin-top:2px; */
+    background: url("/images/heroimage.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top:150px;
+    padding-left: 120px;
+    padding-right:120px;
+    gap:30px;
+
+}
+
+#hero-secondary{
+    color:palevioletred;
+    font-family: 'Inter', sans-serif; 
+}
+#hero-main{
+    font-family: 'Playfair Display', serif;
+}
+#hero-button{
+    border-radius:40px;
+    height:50px;
+    width:150px;
+    background-color: black;
+    color:white;
+        /* box-shadow: 0 6px 10px -2px rgba(0,0,0,0.25); */
+
+
+}
+/* container of all cards */
+#all-products{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    /* height:400px; */
+}
+
+/* individual card */
+.flowers-cards{
+    background-color: pink;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right:10px;
+height:400px;
+}
+.flowers-cards h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: #2e2e2e;
+    margin-bottom: 10px;
+}
+.flowers-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.5px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #444;
+}
+/* image inside card */
+.flowers-cards img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+#products{
+    height:50px;
+    font-size:xx-large;
+    font-family:cursive;
+    text-align:center;
+    color:#d87093;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+#product-button{
+    background-color: pink;
+    border-color: #d87093;
+    height:50px;
+    width:150px;
+    border-radius: 40px;
+    margin-top: 40px;
+    margin-left:600px;
+    margin-bottom: 15px;
+}
+.flower-card{
+    width: 300px;
+    background: #ffd6dc;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.flower-card:hover{
+    transform: translateY(-6px);
+}
+
+.flower-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 18px 20px 22px;
+    text-align: center;
+}
+
+.card-content h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #3b3b3b;
+    margin-bottom: 8px;
+}
+
+.card-content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #b94a64;
+}
+
+.buy-btn{
+    background: #f48ca1;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.buy-btn:hover{
+    background: #e6728a;
+}
