@@ -10,7 +10,39 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+ <div class="my-navbar">
+        <nav class="custom-nav">
+            <div id="heading">
+                <b>Flora</b>
+            </div>
+   <div class="nav-links">
+  <a href="./index.html" class="nav-a">Home</a>
+  <a href="./index.html#products" class="nav-a">Products</a>
+  <a href="./index.html#services" class="nav-a">Services</a>
+  <a href="./index.html#reviews" class="nav-a">Review</a>
+  <a href="./blog.html" class="nav-a">Blogs</a>
+  <a href="./index.html#footer" class="nav-a">Contact Us</a>
+</div>
 
+
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search..." />
+
+            </div>
+            <div class="cart-profile">
+                <button id="authBtn" class="auth-btn" onclick="openAuthModal()">
+                        Login / Signup
+                </button>
+
+                <div id="profileIcon" style="display:none;">
+                    <img src="images/profile.png" height="30px" alt="">
+                </div>
+            </div>
+            
+            
+        </nav>
+    </div>
 <div id="products"><b>Our Products</b></div>
 
 <div id="all-products">
@@ -102,15 +134,191 @@
     <div class="flower-card">
         <img src="images/Chrysanthemums.jpg">
         <div class="card-content">
-            <h3>Carnations</h3>
-            <p>Delicate carnations known for lasting freshness and gentle beauty.</p>
+            <h3>Chrysanthemums</h3>
+            <p>Full elegant flowers symbolizing loyalty longevity tradition and graceful decorative beauty</p>
             <div class="card-footer">
                 <span class="price">₹549</span>
                 <button class="buy-btn">Order Now</button>
             </div>
         </div>
     </div>
-
+    <div class="flower-card">
+        <img src="images/peonies.jpg">
+        <div class="card-content">
+            <h3>Peonies</h3>
+            <p>Lush and romantic, peonies symbolize love, prosperity, and good fortune. Their delicate petals and soft fragrance make them a premium favorite</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/Zinnias.jpg">
+        <div class="card-content">
+            <h3>Zinnias</h3>
+            <p>Full and elegant blooms symbolizing loyalty and longevity. A classic choice for both traditional and modern floral designs</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/Ranunculus.jpg">
+        <div class="card-content">
+            <h3>Ranunculus</h3>
+            <p>Soft layered petals available in rich shades creating romantic visual delight</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/cosmos.jpg">
+        <div class="card-content">
+            <h3>Cosmos</h3>
+            <p>Delicate colorful blooms offering lightness charm and effortless garden beauty</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/Bougainvillea.jpg">
+        <div class="card-content">
+            <h3>Bougainvillea</h3>
+            <p>Bold tropical blooms bursting with vibrant color energy and festive charm</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/Alstroemeria.jpg">
+        <div class="card-content">
+            <h3>Alstroemeria</h3>
+            <p>Striped colorful petals symbolizing friendship devotion and long-lasting freshness</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/petunia.jpg">
+        <div class="card-content">
+            <h3>Petunias</h3>
+            <p>Colorful trumpet-shaped blooms perfect for lively cheerful decorative arrangements</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/bell-flowers.jpg">
+        <div class="card-content">
+            <h3>Bell-Flowers</h3>
+            <p>Delicate bell-shaped blooms symbolizing gratitude elegance and timeless garden charm</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/lilly-of-thevalley.jpg">
+        <div class="card-content">
+            <h3>Lilly of The Valley</h3>
+            <p>Fragrant miniature bells representing sweetness humility and classic romantic elegance</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/bluebell flowers.jpg">
+        <div class="card-content">
+            <h3>Blue-Bell flowers</h3>
+            <p>Classic bell-shaped flowers offering cottage charm elegance and vintage floral appeal</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/sweet-peas.jpg">
+        <div class="card-content">
+            <h3>Sweet-Peas</h3>
+            <p>Soft ruffled fragrant blooms expressing gratitude romance and gentle elegance</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/Scabioas.jpg">
+        <div class="card-content">
+            <h3>Scabiosa</h3>
+            <p>Unique pincushion blooms adding texture softness and whimsical floral interest</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/Nemesia.jpg">
+        <div class="card-content">
+            <h3>Nemesia</h3>
+            <p>Small colorful blooms offering sweetness fragrance and cheerful garden appeal</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/Statice.jpg">
+        <div class="card-content">
+            <h3>Statice</h3>
+            <p>Papery colorful blooms ideal for dried arrangements long-lasting beauty</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/ixora.jpg">
+        <div class="card-content">
+            <h3>Ixora</h3>
+            <p>Bright clustered tropical blooms adding richness vibrance and festive appeal</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="flower-card">
+        <img src="images/asters.jpg">
+        <div class="card-content">
+            <h3>Asters</h3>
+            <p>Star-shaped blooms offering soft color seasonal beauty and charming appeal</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    
 </div>
 <!-- floral form section -->
 <!-- Order Form Modal -->
