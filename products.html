@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="products"><b>Our Products</b></div>
+
+<div id="all-products">
+
+    <div class="flower-card">
+        <img src="images/pink-lillies.jpg">
+        <div class="card-content">
+            <h3>Lillies</h3>
+            <p>Elegant lilies symbolize purity and grace, featuring soft petals and soothing fragrance.</p>
+            <div class="card-footer">
+                <span class="price">₹899</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flower-card">
+        <img src="images/pink-roses.jpg">
+        <div class="card-content">
+            <h3>Roses</h3>
+            <p>Classic roses that express love, beauty, and deep emotions.</p>
+            <div class="card-footer">
+                <span class="price">₹699</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flower-card">
+        <img src="images/pink-tulips.jpg">
+        <div class="card-content">
+            <h3>Tulips</h3>
+            <p>Bright tulips that bring freshness and joy to any space.</p>
+            <div class="card-footer">
+                <span class="price">₹799</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flower-card">
+        <img src="images/orchids.jpg">
+        <div class="card-content">
+            <h3>Orchids</h3>
+            <p>Luxurious orchids symbolizing strength and elegance.</p>
+            <div class="card-footer">
+                <span class="price">₹999</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flower-card">
+        <img src="images/daisies.jpg">
+        <div class="card-content">
+            <h3>Daisies</h3>
+            <p>Cheerful daisies for simple, happy moments.</p>
+            <div class="card-footer">
+                <span class="price">₹599</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flower-card">
+        <img src="images/sunflowers.jpg">
+        <div class="card-content">
+            <h3>Sunflowers</h3>
+            <p>Bright and bold sunflowers that symbolize happiness, warmth, and positivity.</p>
+            <div class="card-footer">
+                <span class="price">₹649</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flower-card">
+        <img src="images/Hydrangeas.jpg">
+        <div class="card-content">
+            <h3>Hydrangeas</h3>
+            <p>Soft, full blooms expressing gratitude, grace, and heartfelt emotions.</p>
+            <div class="card-footer">
+                <span class="price">₹849</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flower-card">
+        <img src="images/Chrysanthemums.jpg">
+        <div class="card-content">
+            <h3>Carnations</h3>
+            <p>Delicate carnations known for lasting freshness and gentle beauty.</p>
+            <div class="card-footer">
+                <span class="price">₹549</span>
+                <button class="buy-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- floral form section -->
+<!-- Order Form Modal -->
+<div id="orderModal" class="order-modal">
+  <div class="order-box">
+    <span class="close-btn" onclick="closeOrderForm()">×</span>
+
+    <h2>Order Flowers</h2>
+
+    <form id="orderForm" onsubmit="return validateOrderForm()">
+
+      <label>Selected Flower</label>
+      <input type="text" id="productName" readonly>
+
+      <label>Your Name</label>
+      <input type="text" id="customerName" placeholder="Enter your name">
+
+      <label>Phone Number</label>
+      <input type="tel" id="phone" placeholder="10-digit mobile number">
+
+      <label>Delivery Address</label>
+      <textarea id="address" placeholder="Enter delivery address"></textarea>
+
+      <label>Quantity</label>
+      <input type="number" id="quantity" min="1" value="1">
+
+      <button type="submit" class="submit-btn">Place Order</button>
+
+    </form>
+  </div>
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>

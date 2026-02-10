@@ -1,0 +1,78 @@
+.blog-section {
+  padding: 80px 60px;
+  background: #fff5f7;
+}
+
+.blog-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.blog-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  color: #b94a64;
+  margin-bottom: 15px;
+}
+
+.blog-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.blog-card video {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.comment-box {
+  margin-top: 25px;
+}
+
+.comment-box h5 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.comment-box button {
+  background: #d63384;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 16px;
+}
+
+.comment-list {
+  margin-top: 12px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.comment-list li {
+  background: #ffe1e7;
+  padding: 8px 12px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 50px 20px;
+  }
+}

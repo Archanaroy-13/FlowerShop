@@ -1,5 +1,7 @@
+/* //original */
 .my-navbar{
-    height: 80px;
+    height: auto;         
+    padding-bottom: 10px;
     background: #fff;
     box-shadow: 0 6px 15px rgba(0,0,0,0.08);
     position: sticky;
@@ -90,6 +92,58 @@
 
 .cart-profile img:hover{
     transform: scale(1.1);
+}
+/* login/signup */
+.auth-btn {
+  background: #d63384;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.auth-btn:hover {
+  background: #b02a6f;
+}
+
+/* nav-media */
+@media (max-width: 900px) {
+
+  /* Hide secondary elements */
+  .search-bar,
+  .cart-profile {
+    display: none;
+  }
+
+  /* Tighten navbar spacing */
+  .custom-nav {
+    padding: 12px 20px;
+    gap: 12px;
+  }
+
+  /* Reduce navbar height visually */
+  .my-navbar {
+    padding-bottom: 8px;
+  }
+}
+
+
+
+/* Mobile phones */
+@media (max-width: 480px) {
+
+  #heading {
+    font-size: 32px;
+  }
+
+  .nav-a {
+    font-size: 14px;
+  }
+
+  #searchInput {
+    width: 150px;
+  }
 }
 
 .outer-hero {
@@ -389,4 +443,176 @@ height:400px;
     font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
     color: #b94a64;
+}
+/* orderform css */
+/* Order Modal */
+.order-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 999;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.order-box {
+  background: #fff;
+  width: 380px;
+  padding: 25px;
+  border-radius: 12px;
+  position: relative;
+  font-family: inherit;
+}
+
+.order-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d63384;
+}
+
+.order-box label {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
+
+.order-box input,
+.order-box textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.order-box textarea {
+  resize: none;
+  height: 70px;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 15px;
+  background: #d63384;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background: #b02a6f;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+ /* service booking form  */
+ /* ============================
+   SERVICE BOOKING MODAL STYLES
+   ============================ */
+
+/* Reuse existing modal but enhance spacing for service form */
+#serviceModal .order-box {
+  width: 420px;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+/* Inputs & select styling */
+#serviceModal input,
+#serviceModal select {
+  width: 100%;
+  padding: 9px 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: border 0.2s ease;
+}
+
+#serviceModal input:focus,
+#serviceModal select:focus {
+  outline: none;
+  border-color: #d63384;
+}
+
+/* Labels */
+#serviceModal label {
+  font-weight: 600;
+  margin-top: 12px;
+  display: block;
+  color: #444;
+  font-size: 14px;
+}
+
+/* Submit button (same theme) */
+#serviceModal .submit-btn {
+  background: #d63384;
+  color: white;
+  border-radius: 10px;
+  padding: 11px;
+  margin-top: 18px;
+  font-size: 15px;
+}
+
+#serviceModal .submit-btn:hover {
+  background: #b02a6f;
+}
+
+/* Scrollbar styling (optional but classy) */
+#serviceModal .order-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+#serviceModal .order-box::-webkit-scrollbar-thumb {
+  background: #e5a1c2;
+  border-radius: 10px;
+}
+
+/* ============================
+   RESPONSIVENESS
+   ============================ */
+
+/* Tablets */
+@media (max-width: 768px) {
+  #serviceModal .order-box {
+    width: 90%;
+    padding: 22px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  #serviceModal .order-box {
+    width: 95%;
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  #serviceModal h2 {
+    font-size: 20px;
+  }
+
+  #serviceModal label {
+    font-size: 13px;
+  }
+
+  #serviceModal input,
+  #serviceModal select {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  #serviceModal .submit-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
 }

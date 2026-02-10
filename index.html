@@ -1,3 +1,4 @@
+<!-- //original -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +22,7 @@
     <a href="#products" class="nav-a">Products</a>
     <a href="#services" class="nav-a">Services</a>
     <a href="#reviews" class="nav-a">Review</a>
+    <a href="/blog.html" class="nav-a">Blogs</a>
     <a href="#footer" class="nav-a">Contact Us</a>
 </div>
 
@@ -30,41 +32,55 @@
 
             </div>
             <div class="cart-profile">
-                <div id="cart"> 
-                    <img src="images/cart.png" height="30px" alt="">
-                </div>
-                <div id="profile">
-                    <img src="images/profile.png" height="30px"alt="">
+                <button id="authBtn" class="auth-btn" onclick="openAuthModal()">
+                        Login / Signup
+                </button>
+
+                <div id="profileIcon" style="display:none;">
+                    <img src="images/profile.png" height="30px" alt="">
                 </div>
             </div>
             
             
         </nav>
     </div>
+    <!-- login/signup model-->
+<div id="authModal" class="order-modal">
+  <div class="order-box">
+    <span class="close-btn" onclick="closeAuthModal()">×</span>
+
+    <h2 id="authTitle">Login</h2>
+
+    <form id="authForm" onsubmit="return handleAuth()">
+
+      <input type="text" id="authName" placeholder="Full Name (Signup only)" style="display:none;">
+
+      <input type="email" id="authEmail" placeholder="Email">
+
+      <input type="password" id="authPassword" placeholder="Password">
+
+      <button type="submit" class="submit-btn">Continue</button>
+
+      <p style="text-align:center; margin-top:10px;">
+        <span id="toggleText">New here?</span>
+        <a href="#" onclick="toggleAuthMode()"> Signup</a>
+      </p>
+
+    </form>
+  </div>
+</div>
+
     <!-- herosection -->
      <div class="outer-hero">
        <div class="inner-hero">
             <h1 id="hero-main"><b>Fresh Flowers Brings Thoughful Moments</b></h1></div>   
             <div><h5 id="hero-secondary">Brighten every occasion with hand-picked, beautifully arranged flowers made to speak from the heart. From everyday smiles to life’s biggest celebrations, we craft blooms that turn feelings into memories</h3>
          </div>
-        <button id="hero-button">Shop Now</button>
-        
+        <a href="/products.html">
+            <button id="hero-button">Shop Now</button>
+        </a>
     </div>
-    <!-- gpt -->
-     <!-- <div class="flower-card">
-    <img src="lillies.jpg" alt="Lillies Bouquet">
-
-    <div class="card-content">
-        <h3>Lillies</h3>
-        <p>Elegant lilies symbolize purity and grace, featuring soft petals and soothing fragrance.</p>
-
-        <div class="card-footer">
-            <span class="price">₹899</span>
-            <button class="buy-btn">Order Now</button>
-        </div>
-    </div>
-</div> -->
-
+    
     <!-- products section -->
      
     <div id="products"><b>Our Products</b></div>
@@ -78,7 +94,7 @@
             <p>Elegant lilies symbolize purity and grace, featuring soft petals and soothing fragrance.</p>
             <div class="card-footer">
                 <span class="price">₹899</span>
-                <button class="buy-btn">Order Now</button>
+        <button class="buy-btn" onclick="openOrderForm('Lillies')">Order Now</button>
             </div>
         </div>
     </div>
@@ -168,10 +184,43 @@
 
 
 </div>
-
 <div class="text-center">
+  <a href="/products.html">
     <button class="product-button"><b>View All</b></button>
+  </a>
 </div>
+
+<!-- floral form section -->
+<!-- Order Form Modal -->
+<div id="orderModal" class="order-modal">
+  <div class="order-box">
+    <span class="close-btn" onclick="closeOrderForm()">×</span>
+
+    <h2>Order Flowers</h2>
+
+    <form id="orderForm" onsubmit="return validateOrderForm()">
+
+      <label>Selected Flower</label>
+      <input type="text" id="productName" readonly>
+
+      <label>Your Name</label>
+      <input type="text" id="customerName" placeholder="Enter your name">
+
+      <label>Phone Number</label>
+      <input type="tel" id="phone" placeholder="10-digit mobile number">
+
+      <label>Delivery Address</label>
+      <textarea id="address" placeholder="Enter delivery address"></textarea>
+
+      <label>Quantity</label>
+      <input type="number" id="quantity" min="1" value="1">
+
+      <button type="submit" class="submit-btn">Place Order</button>
+
+    </form>
+  </div>
+</div>
+
 
 <!-- services section -->
 <section id="services">
@@ -204,7 +253,60 @@
         </div>
 
     </div>
+    <div class="text-center" style="margin-top:30px;">
+        <button class="product-button" onclick="openServiceForm()">
+            <b>Book Now</b>
+        </button>
+    </div>
+
 </section>
+
+<!-- service booking form -->
+ 
+<div id="serviceModal" class="order-modal">
+  <div class="order-box">
+    <span class="close-btn" onclick="closeServiceForm()">×</span>
+
+    <h2>Book Our Floral Services</h2>
+
+    <form id="serviceForm" onsubmit="return validateServiceForm()">
+
+      <label>Type of Function</label>
+      <input type="text" id="functionType" placeholder="Wedding, Birthday, Anniversary">
+
+      <label>Color Theme</label>
+      <input type="text" id="colorTheme" placeholder="Pink, White, Pastel, Mixed">
+
+      <label>Seasonal Flowers</label>
+      <select id="seasonal">
+        <option value="">Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label>Type of Flowers</label>
+      <input type="text" id="flowerType" placeholder="Roses, Orchids, Mixed">
+
+      <label>Estimated Budget (₹)</label>
+      <input type="number" id="budget" placeholder="Enter your budget">
+
+      <label>Quantity Required</label>
+      <input type="number" id="serviceQty" min="1">
+
+      <label>Contact Name</label>
+      <input type="text" id="serviceName" placeholder="Your name">
+
+      <label>Phone Number</label>
+      <input type="tel" id="servicePhone" placeholder="10-digit mobile number">
+
+      <button type="submit" class="submit-btn">
+        Book Service
+      </button>
+
+    </form>
+  </div>
+</div>
+
 
 <!-- reviews section -->
 <section id="reviews">
@@ -272,6 +374,7 @@
         © 2026 Flora. All rights reserved.
     </div>
 </footer>
+<script src="/script.js"></script>
 
 </body>
 </html>
