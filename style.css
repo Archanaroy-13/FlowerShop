@@ -110,19 +110,19 @@
 /* nav-media */
 @media (max-width: 900px) {
 
-  /* Hide secondary elements */
+  
   .search-bar,
   .cart-profile {
     display: none;
   }
 
-  /* Tighten navbar spacing */
+  
   .custom-nav {
     padding: 12px 20px;
     gap: 12px;
   }
 
-  /* Reduce navbar height visually */
+ 
   .my-navbar {
     padding-bottom: 8px;
   }
